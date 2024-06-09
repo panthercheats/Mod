@@ -6,31 +6,31 @@
     <title>Panther's Mod</title>
     <style>
         body {
-            background: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), 
+            background: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)),
                         url('/mnt/data/534F74A0-7F97-47E3-A715-07CAD4F41407.jpeg') no-repeat center center fixed;
             background-size: cover;
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 50px;
+            padding-top: 30px;
         }
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
         hr {
-            width: 80%;
+            width: 60%;
             border: 1px solid #555;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .button-container {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
         }
         .button {
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 10px 20px;
+            font-size: 1em;
             color: white;
             background-color: transparent;
             border: 2px solid white;
@@ -49,9 +49,30 @@
     <h1>Panther's Mod</h1>
     <hr>
     <div class="button-container">
-        <button class="button">Speed Hack</button>
-        <button class="button">Noclip Hack</button>
-        <button class="button">Jump Power Hack</button>
+        <button class="button" onclick="speedHack()">Speed Hack</button>
+        <button class="button" onclick="noclipHack()">Noclip Hack</button>
+        <button class="button" onclick="jumpPowerHack()">Jump Power Hack</button>
     </div>
+
+    <script>
+        function speedHack() {
+            // This is a placeholder function. In a real scenario, this code needs to be executed within Roblox.
+            const code = `game.StarterPlayer.CharacterWalkSpeed = 100`;
+            console.log(code);
+            alert('Speed Hack activated! In Roblox, this would set your character speed to 100.\n\nCode:\n' + code);
+        }
+
+        function noclipHack() {
+            const code = `-- Noclip Hack code would go here`;
+            console.log(code);
+            alert('Noclip Hack activated! In Roblox, this would enable noclip.\n\nCode:\n' + code);
+        }
+
+        function jumpPowerHack() {
+            const code = `-- Jump Power Hack code would go here`;
+            console.log(code);
+            alert('Jump Power Hack activated! In Roblox, this would set your jump power.\n\nCode:\n' + code);
+        }
+    </script>
 </body>
 </html>
